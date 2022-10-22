@@ -1,7 +1,7 @@
 #!/bin/bash
 
 C=$ANDROID_BUILD_TOP
-S="private_patches"
+S="patches"
 D="frameworks/base frameworks/av"
 
 apply_patches() { cd ${C}/${1}; git apply --ignore-whitespace ${C}/${S}/$1/*.patch; cd ${C}; }
